@@ -1,0 +1,138 @@
+/* General Layout */
+.task-container {
+  max-width: 600px;
+  margin: 50px auto;
+  padding: 20px;
+  background: #ffffff;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  text-align: center;
+}
+
+/* Logout Button */
+.logout-btn {
+  background-color: #dc3545;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+  margin-bottom: 20px;
+  width: 100%;
+}
+
+.logout-btn:hover {
+  background-color: #a92b36;
+}
+
+/* Task Input Section */
+.task-input {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-bottom: 25px;
+}
+
+.task-input input {
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  width: 100%;
+}
+
+.task-input button {
+  background-color: #007bff;
+  color: white;
+  padding: 12px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+  width: 100%;
+}
+
+.task-input button:hover {
+  background-color: #0056b3;
+}
+
+/* Task List */
+.task-list {
+  list-style: none;
+  padding: 0;
+}
+
+.task-card {
+  background: #f9f9f9;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.1);
+  margin-bottom: 15px;
+  text-align: left;
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+.task-card h3 {
+  margin: 5px 0;
+}
+
+.task-card p {
+  margin: 2px 0;
+  color: #666;
+}
+
+.task-buttons {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.task-buttons button {
+  flex: 1;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: 0.3s;
+}
+
+.task-buttons .progress-btn {
+  background-color: #ffc107;
+  color: black;
+}
+
+.task-buttons .completed-btn {
+  background-color: #28a745;
+  color: white;
+}
+
+.task-buttons .delete-btn {
+  background-color: #dc3545;
+  color: white;
+}
+
+.task-buttons button:hover {
+  opacity: 0.8;
+}
+
+/* No Task Message */
+.no-tasks {
+  color: #999;
+  font-style: italic;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
